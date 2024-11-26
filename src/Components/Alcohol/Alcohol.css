@@ -1,0 +1,89 @@
+.alcohol {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.alcohol__item {
+  border: 0.1rem solid #ddd;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  font-size: 3.2rem;
+  background-color: #fff;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alcohol__item:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.8rem 0.12rem rgba (0, 0, 0, 0.15);
+}
+
+.alcohol__image {
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+}
+
+.alcohol__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.alcohol__title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.alcohol__company {
+  font-size: 2.8rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.alcohol__category {
+  font-size: 2rem;
+  color: #888;
+  margin-bottom: 0.8rem;
+}
+
+.alcohol__reviews {
+  font-size: 1.9rem;
+  color: #777;
+  margin-bottom: 1.2rem;
+}
+
+.alcohol__pricing {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.alcohol__price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.alcohol__price_prev {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.alcohol__price_new {
+  color: #e63946;
+}
+
+@media (max-width: 768px) {
+  .alcohol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .alcohol {
+    grid-template-columns: 1fr;
+  }
+}
