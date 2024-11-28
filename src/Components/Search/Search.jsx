@@ -1,3 +1,5 @@
+import './Search.css';
+
 const SearchBar = ({ searchValue, setSearchValue }) => {
   const valueHandler = (e) => {
     setSearchValue(e.target.value);
@@ -11,7 +13,9 @@ const SearchBar = ({ searchValue, setSearchValue }) => {
         className="search__input"
         placeholder="Search booze"
       />
-      <button className="search__button">Search</button>
+      <button className="search__button" type="submit">
+        Search
+      </button>
     </form>
   );
 };
