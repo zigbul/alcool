@@ -3,13 +3,15 @@ import Search from '../Search/Search';
 import Alcohol from '../Alcohol/Alcohol';
 import { useState } from 'react';
 import data from '../../utils/data';
+import useDebounce from '../../hooks/useDebounce';
 
 const App = () => {
   const [products, setProducts] = useState(data);
   const [searchValue, setSearchValue] = useState('');
+  const debouncedValue = useDebounce(searchValue);
 
   const searchedProducts = products.filter((product) => {
-    return product.title.includes(searchValue);
+    return product.title.toLowerCase().includes(debouncedValue.toLowerCase());
   });
 
   return (
