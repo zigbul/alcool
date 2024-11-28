@@ -1,5 +1,4 @@
 import './Alcohol.css';
-import data from '../../utils/data.js';
 
 const AlcoCard = ({ alco }) => {
   const { title, img, company, category, exposure, reviews, prevPrice, newPrice } = alco;
@@ -23,11 +22,11 @@ const AlcoCard = ({ alco }) => {
   );
 };
 
-const Alcohol = () => {
+const Alcohol = ({ products }) => {
   return (
     <ul className="alcohol">
-      {data.map((alco) => {
-        return <AlcoCard alco={alco} key={Math.random()} />;
+      {products.map((product) => {
+        return <AlcoCard alco={product} key={Math.random()} />;
       })}
     </ul>
   );
