@@ -1,3 +1,5 @@
+import './Category.css';
+
 const Category = ({ value, setCategory, categories }) => {
   return (
     <div className="sidebar__category category">
@@ -10,6 +12,7 @@ const Category = ({ value, setCategory, categories }) => {
         }}
         value={value}
         name="category"
+        className="category__select"
         id="category__select">
         {categories.map((category) => (
           <option key={Math.random()} value={category}>

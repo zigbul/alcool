@@ -1,0 +1,32 @@
+.category {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category__label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.category__select {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category__select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.category__select:hover {
+  border-color: #555;
+  cursor: pointer;
+}
