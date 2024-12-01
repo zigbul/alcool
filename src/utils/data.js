@@ -110,7 +110,7 @@ const data = [
     category: 'Vodka',
   },
   {
-    img: 'https://alkostyle.ru/alc/1967_38.jpg',
+    img: 'https://alkostyle.ru/alc/https://avatars.mds.yandex.net/i?id=18100e876fc308c10afb9a29fd523267fde44572-9998293-images-thumbs&n=13.jpg',
     title: 'Jack Daniel’s Old No. 7',
     reviews: 3541,
     prevPrice: 39.99,
